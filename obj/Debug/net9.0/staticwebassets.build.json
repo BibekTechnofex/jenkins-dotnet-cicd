@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rraeBZfV3QRQq0iF8UZrKaCc31dkF6OdnLcu84AkBnA=",
+  "Source": "TransferMock",
+  "BasePath": "_content/TransferMock",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
