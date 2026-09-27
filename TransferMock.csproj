@@ -26,4 +26,11 @@
     <Protobuf Include="Controllers\Grpc\Protos\account_statement.proto" GrpcServices="Server" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="TransferMock.Tests\**" />
+    <Content Remove="TransferMock.Tests\**" />
+    <EmbeddedResource Remove="TransferMock.Tests\**" />
+    <None Remove="TransferMock.Tests\**" />
+  </ItemGroup>
+
 </Project>
