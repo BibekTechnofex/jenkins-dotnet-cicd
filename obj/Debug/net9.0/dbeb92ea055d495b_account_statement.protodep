@@ -1,2 +1,0 @@
-obj\Debug\net9.0\Controllers\Grpc\Protos/AccountStatement.cs \
-obj\Debug\net9.0\Controllers\Grpc\Protos/AccountStatementGrpc.cs: Controllers/Grpc/Protos/account_statement.proto
