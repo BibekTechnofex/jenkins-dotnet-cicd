@@ -37,4 +37,12 @@ public class AccountStatementController : ControllerBase
         var statements = await _accountStatementService.GetAllAccountStatementsAsync();
         return Ok(statements);
     }
+
+    [HttpGet("/test/Statements")]
+    [ProducesResponseType(typeof(IReadOnlyList<AccountStatementDto>), StatusCodes.Status200OK)]
+    public async Task<ActionResult<IReadOnlyList<AccountStatementDto>>> TestStatements()
+    {
+        var statements = await _accountStatementService.GetAllAccountStatementsAsync();
+        return Ok(statements);
+    }
 }
