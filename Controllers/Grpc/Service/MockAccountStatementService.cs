@@ -124,4 +124,42 @@ public class MockAccountStatementService : IAccountStatementService
 
         return Task.FromResult<IReadOnlyList<AccountStatementDto>>(mockStatements);
     }
+
+    public Task<IReadOnlyList<AccountStatementDto>> GetAllAccountStatementsAsync()
+    {
+        
+
+        var mockStatements = new List<AccountStatementDto>
+        {
+            new()
+            {
+                TransactionId = $"TXN-{01}-001",
+                Description = "Mock opening balance",
+                Amount = 1000.00,
+                TransactionType = "Credit",
+                TransactionDate = "2026-08-01",
+                Balance = 1000.00
+            },
+            new()
+            {
+                TransactionId = $"TXN-{02}-002",
+                Description = "Mock debit transaction",
+                Amount = 250.00,
+                TransactionType = "Debit",
+                TransactionDate = "2026-08-02",
+                Balance = 750.00
+            },
+            new()
+            {
+                TransactionId = $"TXN-{03}-003",
+                Description = "Mock credit transaction",
+                Amount = 500.00,
+                TransactionType = "Credit",
+                TransactionDate = "2026-08-03",
+                Balance = 1250.00
+            }
+        };
+
+        return Task.FromResult<IReadOnlyList<AccountStatementDto>>(mockStatements);
+    }
 }
