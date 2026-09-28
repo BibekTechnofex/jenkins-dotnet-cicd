@@ -30,11 +30,4 @@ public class AccountStatementController : ControllerBase
         return Ok(statements);
     }
 
-    [HttpGet("/Statements")]
-    [ProducesResponseType(typeof(IReadOnlyList<AccountStatementDto>), StatusCodes.Status200OK)]
-    public async Task<ActionResult<IReadOnlyList<AccountStatementDto>>> Statements()
-    {
-        var statements = await _accountStatementService.GetAllAccountStatementsAsync();
-        return Ok(statements);
-    }
 }
