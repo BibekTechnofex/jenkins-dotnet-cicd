@@ -43,6 +43,7 @@ public class UserController : ControllerBase
         if (fullName is null)
         {
             return NotFound(new { message = $"User '{userId}' not found." });
+            
         }
 
         return Ok(new GetUserFullNameResponse { FullName = fullName });
